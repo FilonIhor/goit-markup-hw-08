@@ -1,0 +1,21 @@
+:root {
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
+
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --white-text-color: #ffffff;
+  --mail-tel-text-color: rgba(255, 255, 255, 0.6);
+  --icon-color: #afb1b8;
+  --background-icon: #ffffff;
+  --main-background-color: #ffffff;
+  --button-background-color: #188ce8;
+  --card-background-color: rgba(33, 150, 243, 0.9);
+  --footer-background-color: #2f303a;
+  --secondary-background-color: #f5f4fa;
+  --address-color: rgba(255, 255, 255, 0.6);
+  --footer-icon-background-color: rgba(255, 255, 255, 0.1);
+
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
