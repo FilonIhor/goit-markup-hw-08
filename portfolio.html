@@ -70,10 +70,12 @@
           </button>
           <ul class="mobile-menu-nav markers">
             <li class="mobile-menu-nav__item">
-              <a href="#" class="mobile-menu-nav__link">Студія</a>
+              <a href="./index.html" class="mobile-menu-nav__link">Студія</a>
             </li>
             <li class="mobile-menu-nav__item">
-              <a href="#" class="mobile-menu-nav__link mobile-menu-nav__link_current">Портфоліо</a>
+              <a href="./portfolio.html" class="mobile-menu-nav__link mobile-menu-nav__link_current"
+                >Портфоліо</a
+              >
             </li>
             <li class="mobile-menu-nav__item">
               <a href="#" class="mobile-menu-nav__link">Контакти</a>
@@ -132,37 +134,73 @@
               <button type="button" class="portfolio-button secondary">Маркетинг</button>
             </li>
           </ul>
-          <ul class="our-portfolio markers">
-            <li class="portfolio-card">
+          <ul class="projects-list markers">
+            <li class="projects-list__item">
               <a href="#" class="shadow">
                 <div class="portfolio-card-thumb">
-                  <img
-                    src="./images/portfolio/img(1)(2).jpg"
-                    alt="ноутбук с открытым сайтом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio1.jpg    1x,
+                        ./images/desktop/portfolio1@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio1.jpg    1x,
+                        ./images/tablet/portfolio1@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio1.jpg    1x,
+                        ./images/mobile/portfolio1@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/mobile/portfolio1.jpg" alt="ноутбук с открытым сайтом" />
+                  </picture>
                   <p class="portfolio-card-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="portfolio-photo">
-                  <h2 class="portfolio-title">Технокряк</h2>
-                  <p class="portfolio-text">Веб-сайт</p>
+                <div class="portfolio-content">
+                  <h2 class="portfolio-content__title">Технокряк</h2>
+                  <p class="portfolio-content__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
+            <li class="projects-list__item">
               <a href="#" class="shadow">
                 <div class="portfolio-card-thumb">
-                  <img
-                    src="./images/portfolio/img(2)(2).jpg"
-                    alt="два баскетболиста"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio2.jpg    1x,
+                        ./images/desktop/portfolio2@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio2.jpg    1x,
+                        ./images/tablet/portfolio2@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio2.jpg    1x,
+                        ./images/mobile/portfolio2@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/mobile/portfolio2.jpg" alt="два баскетболиста" />
+                  </picture>
                   <p class="portfolio-card-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -170,110 +208,80 @@
                   </p>
                 </div>
 
-                <div class="portfolio-photo">
-                  <h2 class="portfolio-title">
+                <div class="portfolio-content">
+                  <h2 class="portfolio-content__title">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="portfolio-text">Дизайн</p>
+                  <p class="portfolio-content__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
+            <li class="projects-list__item">
               <a href="#" class="shadow">
                 <div class="portfolio-card-thumb">
-                  <img
-                    src="./images/portfolio/img(3)(2).jpg"
-                    alt="логотип рыбного ресторана"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio3.jpg    1x,
+                        ./images/desktop/portfolio3@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio3.jpg    1x,
+                        ./images/tablet/portfolio3@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio3.jpg    1x,
+                        ./images/mobile/portfolio3@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/mobile/portfolio3.jpg" alt="логотип рыбного ресторана" />
+                  </picture>
                   <p class="portfolio-card-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="portfolio-photo">
-                  <h2 class="portfolio-title">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="portfolio-text">Додаток</p>
+                <div class="portfolio-content">
+                  <h2 class="portfolio-content__title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="portfolio-content__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
+            <li class="projects-list__item">
               <a href="#" class="shadow">
                 <div class="portfolio-card-thumb">
-                  <img
-                    src="./images/portfolio/img(4)(1).jpg"
-                    alt="наушники"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="portfolio-card-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
-                  </p>
-                </div>
-
-                <div class="portfolio-photo">
-                  <h2 class="portfolio-title">Проект <span lang="en">Prime</span></h2>
-                  <p class="portfolio-text">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="portfolio-card">
-              <a href="#" class="shadow">
-                <div class="portfolio-card-thumb">
-                  <img
-                    src="./images/portfolio/img(5).jpg"
-                    alt="двф маленьких бокса"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="portfolio-card-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
-                  </p>
-                </div>
-
-                <div class="portfolio-photo">
-                  <h2 class="portfolio-title">Проект <span lang="en">Boxes</span></h2>
-                  <p class="portfolio-text">Додаток</p>
-                </div>
-              </a>
-            </li>
-            <li class="portfolio-card">
-              <a href="#" class="shadow">
-                <div class="portfolio-card-thumb">
-                  <img
-                    src="./images/portfolio/img(6).jpg"
-                    alt="монитор компьютера"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="portfolio-card-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
-                  </p>
-                </div>
-                <div class="portfolio-photo">
-                  <h2 class="portfolio-title" lang="en">Inspiration has no Borders</h2>
-                  <p class="portfolio-text">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="portfolio-card">
-              <a href="#" class="shadow">
-                <div class="portfolio-card-thumb">
-                  <img
-                    src="./images/portfolio/img(7).jpg"
-                    alt="развернутая книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio4.jpg    1x,
+                        ./images/desktop/portfolio4@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio4.jpg    1x,
+                        ./images/tablet/portfolio4@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio4.jpg    1x,
+                        ./images/mobile/portfolio4@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/mobile/portfolio4.jpg" alt="наушники" />
+                  </picture>
                   <p class="portfolio-card-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -281,21 +289,40 @@
                   </p>
                 </div>
 
-                <div class="portfolio-photo">
-                  <h2 class="portfolio-title">Видання <span lang="en">Limited Edition</span></h2>
-                  <p class="portfolio-text">Дизайн</p>
+                <div class="portfolio-content">
+                  <h2 class="portfolio-content__title">Проект <span lang="en">Prime</span></h2>
+                  <p class="portfolio-content__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
+            <li class="projects-list__item">
               <a href="#" class="shadow">
                 <div class="portfolio-card-thumb">
-                  <img
-                    src="./images/portfolio/img(8).jpg"
-                    alt="карточка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio5.jpg    1x,
+                        ./images/desktop/portfolio5@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio5.jpg    1x,
+                        ./images/tablet/portfolio5@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio5.jpg    1x,
+                        ./images/mobile/portfolio5@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/mobile/portfolio5.jpg" alt="двф маленьких бокса" />
+                  </picture>
+
                   <p class="portfolio-card-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -303,21 +330,81 @@
                   </p>
                 </div>
 
-                <div class="portfolio-photo">
-                  <h2 class="portfolio-title">Проект <span lang="en">LAB</span></h2>
-                  <p class="portfolio-text">Маркетинг</p>
+                <div class="portfolio-content">
+                  <h2 class="portfolio-content__title">Проект <span lang="en">Boxes</span></h2>
+                  <p class="portfolio-content__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
+            <li class="projects-list__item">
               <a href="#" class="shadow">
                 <div class="portfolio-card-thumb">
-                  <img
-                    src="./images/portfolio/img(9).jpg"
-                    alt="руки на клавиатуре ноутбука"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio6.jpg    1x,
+                        ./images/desktop/portfolio6@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio6.jpg    1x,
+                        ./images/tablet/portfolio6@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio6.jpg    1x,
+                        ./images/mobile/portfolio6@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/mobile/portfolio6.jpg" alt="монитор компьютера" />
+                  </picture>
+
+                  <p class="portfolio-card-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="portfolio-content">
+                  <h2 class="portfolio-content__title" lang="en">Inspiration has no Borders</h2>
+                  <p class="portfolio-content__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="projects-list__item">
+              <a href="#" class="shadow">
+                <div class="portfolio-card-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio7.jpg    1x,
+                        ./images/desktop/portfolio7@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio7.jpg    1x,
+                        ./images/tablet/portfolio7@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio7.jpg    1x,
+                        ./images/mobile/portfolio7@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/mobile/portfolio7.jpg" alt="развернутая книга" />
+                  </picture>
+
                   <p class="portfolio-card-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -325,9 +412,93 @@
                   </p>
                 </div>
 
-                <div class="portfolio-photo">
-                  <h2 class="portfolio-title" lang="en">Growing Business</h2>
-                  <p class="portfolio-text">Додаток</p>
+                <div class="portfolio-content">
+                  <h2 class="portfolio-content__title">
+                    Видання <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="portfolio-content__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list__item">
+              <a href="#" class="shadow">
+                <div class="portfolio-card-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio8.jpg    1x,
+                        ./images/desktop/portfolio8@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio8.jpg    1x,
+                        ./images/tablet/portfolio8@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio8.jpg    1x,
+                        ./images/mobile/portfolio8@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/mobile/portfolio8.jpg" alt="карточка" />
+                  </picture>
+
+                  <p class="portfolio-card-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+
+                <div class="portfolio-content">
+                  <h2 class="portfolio-content__title">Проект <span lang="en">LAB</span></h2>
+                  <p class="portfolio-content__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list__item">
+              <a href="#" class="shadow">
+                <div class="portfolio-card-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio9.jpg    1x,
+                        ./images/desktop/portfolio9@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio9.jpg    1x,
+                        ./images/tablet/portfolio9@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio9.jpg    1x,
+                        ./images/mobile/portfolio9@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/mobile/portfolio9.jpg" alt="руки на клавиатуре ноутбука" />
+                  </picture>
+
+                  <p class="portfolio-card-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+
+                <div class="portfolio-content">
+                  <h2 class="portfolio-content__title" lang="en">Growing Business</h2>
+                  <p class="portfolio-content__text">Додаток</p>
                 </div>
               </a>
             </li>
