@@ -505,11 +505,20 @@ button {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.18;
   text-align: center;
 }
 
-.portfolio-title {
+.text-team {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.portfolio-content__title {
   margin-bottom: 4px;
   color: var(--primary-text-color);
   font-weight: 700;
@@ -518,10 +527,10 @@ button {
   letter-spacing: 0.06em;
 }
 
-.portfolio-text {
+.portfolio-content__text {
   color: var(--secondary-text-color);
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.88;
 }
 
 @media screen and (max-width: 767px) {
@@ -952,15 +961,6 @@ button {
     padding-bottom: 30px;
   }
 }
-.text-team {
-  margin-bottom: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  color: var(--secondary-text-color);
-}
-
 .social-list {
   display: flex;
   justify-content: center;
@@ -1279,16 +1279,23 @@ button {
   background-color: var(--accent-color);
 }
 
-.our-portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+.projects-list {
+  display: block;
 }
 
-.portfolio-card {
-  flex-basis: calc((100% - 60px) / 3);
+@media screen and (min-width: 768px) {
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
 }
-
+@media screen and (max-width: 767px) {
+  .projects-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .shadow {
   display: block;
   text-decoration: none;
@@ -1298,6 +1305,14 @@ button {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .shadow {
+    width: 354px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .portfolio-card-thumb {
   position: relative;
   overflow: hidden;
@@ -1313,7 +1328,7 @@ button {
   padding: 63px 24px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.56;
   color: var(--white-text-color);
   background-color: var(--card-background-color);
   transform: translateY(100%);
@@ -1323,9 +1338,10 @@ button {
   transform: translateY(0);
 }
 
-.portfolio-photo {
+.portfolio-content {
   padding: 20px 24px;
   background: var(--main-background-color);
   border: 1px solid #eeeeee;
   border-top: none;
+  flex-grow: 1;
 }/*# sourceMappingURL=main.css.map */
